@@ -1,0 +1,24 @@
+--3. 권한을 부여받은 후
+CREATE TABLE TEST(
+    TEST_ID NUMBER,
+    TEST_NAME VARCHAR2(20)
+);
+
+--4.권한을 부여받은 후
+INSERT INTO TEST VALUES(1,'HI');
+
+--5.권한을 부여받은 후
+SELECT*
+FROM TJOEUN.EMPLOYEE;
+
+--6.권한을 부여받은 후
+INSERT INTO TJOEUN.EMPLOYEE(EMP_ID,EMP_NAME,EMP_NO,JOB_CODE) 
+        VALUES(302,'홍길동','210324-7895768','J2');
+        
+        COMMIT;
+        
+-- * 권한 회수    
+INSERT INTO TJOEUN.EMPLOYEE(EMP_ID,EMP_NAME,EMP_NO,JOB_CODE) 
+        VALUES(303,'홍길동','210324-7895768','J2');
+        
+        
