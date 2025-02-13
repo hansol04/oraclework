@@ -525,6 +525,7 @@ AS SELECT EMP_NO,EMP_ID,EMP_NAME,SALARY,SALARY*12연봉
 --------------------------------------------------------------------------------
 /*
     * 테이블을 다 생성한 후에 제약조건 추가
+    
     ALTER TABLE 테이블명 변경할 ADD(MODIFY) 내용;
     - PRIMARY KEY : ALTER TABLE 테이블명 ADD PRIMARY KEY(컬럼명);
     - FOREIGN KEY : ALTER TABLE 테이블명 ADD FORIEGN KEY(컬럼명) REFERENCES 참조할 테이블명[(참조할 컬럼명)]
