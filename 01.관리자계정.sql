@@ -63,6 +63,12 @@ CREATE USER jsp IDENTIFIED BY 1234;
 GRANT CONNECT, RESOURCE TO jsp;
 ALTER USER jsp default tablespace users quota unlimited on users;
 
+-- mybatis사용자 만들기
+ALTER SESSION SET "_oracle_script" = true;
+CREATE USER mybatis IDENTIFIED BY 1234;
+GRANT CONNECT, RESOURCE TO mybatis;
+ALTER USER mybatis default tablespace users quota unlimited on users;
+
 
 
 
